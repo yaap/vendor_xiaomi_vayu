@@ -26,6 +26,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vayu/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/xiaomi/vayu/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/xiaomi/vayu/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/104_Meet.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/104_Meet.png \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/108_NorthernEurope.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/108_NorthernEurope.png \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/109_Rome.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/109_Rome.png \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/110_BlackGold.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/110_BlackGold.png \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/121_BBP.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/121_BBP.png \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/122_Mysterious.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/122_Mysterious.png \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/123_GreenOrange.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/123_GreenOrange.png \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/124_SummerDay.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/124_SummerDay.png \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/125_Latin.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/125_Latin.png \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/126_Fantasy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/126_Fantasy.png \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/127_DustDream.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/127_DustDream.png \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/128_MongKok.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/128_MongKok.png \
     vendor/xiaomi/vayu/proprietary/vendor/etc/camera/CFR_para_T.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_T.bin \
     vendor/xiaomi/vayu/proprietary/vendor/etc/camera/CFR_para_UW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW.bin \
     vendor/xiaomi/vayu/proprietary/vendor/etc/camera/CFR_para_W.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_W.bin \
@@ -59,6 +71,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vayu/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
     vendor/xiaomi/vayu/proprietary/vendor/etc/camera/seg_quantized.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/seg_quantized.dlc \
     vendor/xiaomi/vayu/proprietary/vendor/etc/camera/sr_params.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr_params.xml \
+    vendor/xiaomi/vayu/proprietary/vendor/etc/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic \
     vendor/xiaomi/vayu/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/xiaomi/vayu/proprietary/vendor/etc/camera/visidon_clearshot_params_algoup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/visidon_clearshot_params_algoup.xml \
     vendor/xiaomi/vayu/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -510,7 +523,6 @@ PRODUCT_PACKAGES += \
     libbtnv \
     libc++_shared \
     libcacertclient \
-    libcamera_dirty \
     libcamera_nn_stub \
     libcamera_scene \
     libcamxfdalgov7 \
@@ -583,7 +595,6 @@ PRODUCT_PACKAGES += \
     libmialgo_utils \
     libmialgo_video_colourkeeping \
     libmialgo_video_seg \
-    libmialgoengine \
     libmibokeh_712 \
     libmibokeh_845_video \
     libmibokeh_855 \

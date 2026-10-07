@@ -6,6 +6,7 @@ soong_namespace {
     imports: [
         "hardware/qcom-caf/sm8150",
         "device/xiaomi/vayu",
+        "vendor/xiaomi/vayu-camera/common",
         "hardware/xiaomi",
         "hardware/qcom-caf/common/libqti-perfd-client",
         "vendor/qcom/opensource/display",
@@ -7994,31 +7995,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcamera_dirty",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamera_dirty.so",
-            ],
-            shared_libs: [
-                "libc++_shared",
-                "liblog",
-                "libm",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcamera_nn_stub",
     owner: "xiaomi",
     strip: {
@@ -10080,57 +10056,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libGLESv3",
                 "libEGL",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmialgoengine",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmialgoengine.so",
-            ],
-            shared_libs: [
-                "libarcsoft_high_dynamic_range_v5",
-                "libarcsoft_high_dynamic_range",
-                "libarcsoft_low_light_hdr",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libnativewindow",
-                "libEGL",
-                "libGLESv2",
-                "libgrallocutils",
-                "libmpbase",
-                "libarcsoft_beautyshot",
-                "libarcsoft_dualcam_refocus_image",
-                "libarcsoft_portrait_lighting",
-                "libarcsoft_portrait_lighting_c",
-                "libarcsoft_distortion_correction",
-                "libarcsoft_bodyslim",
-                "librelight_only",
-                "libalhLDC",
-                "libalAILDC",
-                "libalCFR",
-                "libion",
-                "libmialgo_ie_capture",
-                "libmiai_portraitsupernight",
-                "libmibokeh_712",
-                "libsdk_sr",
-                "libc++",
-                "libc",
-                "libm",
                 "libdl",
             ],
         },
